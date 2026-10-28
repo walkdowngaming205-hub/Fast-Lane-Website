@@ -1,0 +1,112 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Fast Lane Tech Service builds professional websites, online stores, and practical digital solutions for businesses and creators.">
+  <title>Fast Lane Tech Service — Move Your Ideas Forward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="top-line"></div>
+
+  <!-- HEADER: brand logo and primary navigation links. -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Fast Lane Tech Service home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M27 3 10 26h12l-2 19 18-25H26z" fill="currentColor"/></svg></span>
+      <span class="brand-copy"><strong>FAST LANE</strong><small>TECH SERVICE</small></span>
+    </a>
+
+    <!-- MOBILE MENU BUTTON: shown on smaller screens to open the navigation. -->
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+    <!-- NAVIGATION: links jump to sections on this same page. -->
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#process">How It Works</a><a class="nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+    </nav>
+   </header>
+
+  <!-- MAIN CONTENT: the core sections of the website. -->
+  <main>
+
+    <!-- HERO SECTION: the first message visitors see, with calls to action and decorative artwork. -->
+    <section class="hero section-wrap" id="home">
+      <!-- HERO TEXT: headline, introduction, and buttons that lead visitors to services or contact. -->
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR LOCAL DIGITAL PARTNER</div>
+        <h1>Good ideas deserve<br>to move <em>fast.</em></h1>
+        <p class="hero-text">We build clean, modern websites and practical digital solutions that help your business look professional, reach more people, and keep moving forward.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#contact">Start a Project <span>↗</span></a><a class="text-link" href="#services">Explore services <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>Built with purpose. Designed for growth.</span></div>
+      </div>
+      <!-- HERO ARTWORK: decorative technology-inspired graphic made with HTML and SVG shapes. -->
+      <div class="hero-art" aria-label="Abstract black and gold technology illustration">
+        <div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-glow"></div><div class="gold-core"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M67 7 25 64h29l-3 49 45-65H66z" fill="currentColor"/></svg></div>
+        <div class="art-label label-top"><span>01 / IDEAS</span><i></i></div><div class="art-label label-bottom"><i></i><span>02 / EXECUTION</span></div>
+        <div class="art-chip chip-a"><span class="chip-dot"></span> DIGITAL SOLUTIONS</div><div class="art-chip chip-b">FL<span>®</span></div>
+      </div>
+      <!-- SERVICE STRIP: short list of the main types of work offered. -->
+      <div class="hero-bottom"><span>WEB DESIGN</span><b>✳</b><span>ONLINE STORES</span><b>✳</b><span>TECH SUPPORT</span><b>✳</b><span>DIGITAL GROWTH</span></div>
+    </section>
+
+    <!-- SERVICES SECTION: cards describing the four main service categories. -->
+    <section class="services section-wrap section-pad" id="services">
+      <div class="section-heading"><div><div class="eyebrow">WHAT WE DO</div><h2>Tools to take your<br><em>business further.</em></h2></div><p>Whether you're starting from scratch or ready to level up, we help turn the next step into a plan you can act on.</p></div>
+      <!-- SERVICE CARDS: each article describes one service and links to the contact section. -->
+      <div class="service-grid">
+        <article class="service-card"><div class="card-top"><span class="service-number">01</span><span class="line-icon">↗</span></div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="21" rx="2"/><path d="M3 11h26M8 8h.1M11 8h.1M14 8h.1M10 17h7M10 21h12"/></svg></div><h3>Website Development</h3><p>Professional, responsive websites made to tell your story and turn visitors into customers.</p><a href="#contact" class="card-link">Build my website <span>↗</span></a></article>
+        <article class="service-card featured"><div class="card-top"><span class="service-number">02</span><span class="line-icon">↗</span></div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6h4l3 16h14l4-11H9M13 27a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM24 27a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg></div><h3>Online Stores</h3><p>Make it easier for people to browse your products and buy from your business online.</p><a href="#contact" class="card-link">Start selling online <span>↗</span></a></article>
+        <article class="service-card"><div class="card-top"><span class="service-number">03</span><span class="line-icon">↗</span></div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="3" width="16" height="26" rx="3"/><path d="M13 7h6M14 25h4"/></svg></div><h3>App & Digital Projects</h3><p>Thoughtful digital tools and custom features that fit the way you and your customers work.</p><a href="#contact" class="card-link">Talk through an idea <span>↗</span></a></article>
+        <article class="service-card"><div class="card-top"><span class="service-number">04</span><span class="line-icon">↗</span></div><div class="service-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M18 4a8 8 0 0 0-10 10L3 19l10 10 5-5a8 8 0 0 0 10-10l-5 5-6-6 5-5a8 8 0 0 0-4-4Z"/></svg></div><h3>Website & Tech Support</h3><p>Need an update, a fix, or help figuring out the next step? Let's get your tech working for you.</p><a href="#contact" class="card-link">Get support <span>↗</span></a></article>
+      </div>
+      <!-- SERVICES NOTE: explains that scope and budget are discussed for each project. -->
+      <p class="service-footnote">Every project starts with a conversation about what you need and what makes sense for your budget.</p>
+    </section>
+
+    <!-- ABOUT SECTION: brand emblem and explanation of the company’s approach. -->
+    <section class="about-band" id="about"><div class="section-wrap about-layout">
+      <div class="about-stamp" aria-label="Fast Lane Tech Service emblem"><span>FAST</span><b>LANE</b><small>TECH SERVICE</small><div class="stamp-ring">MOVE FORWARD • MOVE FORWARD •</div></div>
+      <div class="about-copy"><div class="eyebrow">WHY FAST LANE</div><h2>Big-business energy.<br><em>Personal attention.</em></h2><p>Your business deserves more than a website that just looks good. It deserves a digital experience with a clear purpose, easy navigation, and a plan for what comes next.</p><p>Fast Lane Tech Service works with you to understand the goal, make the process clear, and create a solution that fits your business.</p><a class="button button-outline" href="#contact">Let's build something <span>↗</span></a></div>
+    </div></section>
+
+    <!-- PROCESS SECTION: four steps from the first conversation to launch. -->
+    <section class="process section-wrap section-pad" id="process"><div class="section-heading"><div><div class="eyebrow">A SIMPLE PROCESS</div><h2>From “what if”<br>to <em>what's next.</em></h2></div><p>No confusing tech talk. Just a clear process, open communication, and steady progress from the first conversation to launch.</p></div>
+      <!-- PROCESS STEPS: each article explains one stage of a project. -->
+      <div class="process-list"><article><span>01</span><div><h3>Tell us the goal</h3><p>Share your idea, your needs, and what success looks like for you.</p></div><b>↘</b></article><article><span>02</span><div><h3>Plan the right solution</h3><p>We outline the scope, timeline, and cost before work gets underway.</p></div><b>↘</b></article><article><span>03</span><div><h3>Build and refine</h3><p>We bring the plan to life and keep you in the loop as it takes shape.</p></div><b>↘</b></article><article><span>04</span><div><h3>Launch with confidence</h3><p>We review the finished work and talk through the next steps.</p></div><b>↗</b></article></div>
+    </section>
+
+    <!-- CONTACT SECTION: contact details and project inquiry form. -->
+    <section class="contact-section" id="contact"><div class="section-wrap contact-layout">
+      <div class="contact-copy"><div class="eyebrow"><span class="status-dot"></span> YOUR NEXT MOVE STARTS HERE</div><h2>Let's put your<br>idea in the <em>fast lane.</em></h2><p>Tell us a little about what you're working on. We'll take it from there.</p><a href="mailto:domoniqueward.dev@gmail.com" class="contact-email">domoniqueward.dev@gmail.com <span>↗</span></a><div class="contact-small">Serving businesses and creators with practical digital solutions.</div></div>
+      <!-- CONTACT FORM: JavaScript prepares an email draft; this form does not send data to a server. -->
+      <form class="contact-form" id="contact-form"><div class="form-head"><span>PROJECT INQUIRY</span><span>FL / 01</span></div>
+        <!-- NAME FIELD: required visitor name. -->
+        <label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Name" required>
+        <!-- EMAIL FIELD: required email address, validated by the browser. -->
+        <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <!-- SERVICE PICKER: lets the visitor select the type of help they need. -->
+        <label for="service">What do you need?</label><select id="service" name="service" required><option value="" disabled selected>Choose a service</option><option>Website development</option><option>Online store</option><option>App or digital project</option><option>Website or tech support</option><option>Not sure yet</option></select>
+        <!-- PROJECT DETAILS: visitor describes their idea or needs. -->
+        <label for="details">Tell us about your project</label><textarea id="details" name="details" rows="3" placeholder="What are you looking to build?" required></textarea>
+        <!-- SUBMIT BUTTON: asks the browser/JavaScript to open an email draft. -->
+        <button class="button button-gold form-submit" type="submit">Create Email Inquiry <span>↗</span></button><p class="form-note">This opens your email app with your inquiry ready to send. No account or sign-up needed.</p><p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div></section>
+  </main>
+
+  <!-- FOOTER: repeat brand mark, tagline, and automatically updated copyright year. -->
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M27 3 10 26h12l-2 19 18-25H26z" fill="currentColor"/></svg></span><span class="brand-copy"><strong>FAST LANE</strong><small>TECH SERVICE</small></span></a><span class="footer-tagline">YOUR BUSINESS. YOUR VISION. IN MOTION.</span><span class="footer-copy">© <span id="year"></span> Fast Lane Tech Service by Domonique Ward</span></footer>
+
+</body>
+
+</html>
