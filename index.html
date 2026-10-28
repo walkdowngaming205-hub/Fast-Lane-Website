@@ -1,4 +1,3 @@
-
 <!doctype html>
 
 <html lang="en">
@@ -88,18 +87,32 @@
     <!-- CONTACT SECTION: contact details and project inquiry form. -->
     <section class="contact-section" id="contact"><div class="section-wrap contact-layout">
       <div class="contact-copy"><div class="eyebrow"><span class="status-dot"></span> YOUR NEXT MOVE STARTS HERE</div><h2>Let's put your<br>idea in the <em>fast lane.</em></h2><p>Tell us a little about what you're working on. We'll take it from there.</p><a href="mailto:domoniqueward.dev@gmail.com" class="contact-email">domoniqueward.dev@gmail.com <span>↗</span></a><div class="contact-small">Serving businesses and creators with practical digital solutions.</div></div>
-      <!-- CONTACT FORM: JavaScript prepares an email draft; this form does not send data to a server. -->
-      <form class="contact-form" id="contact-form"><div class="form-head"><span>PROJECT INQUIRY</span><span>FL / 01</span></div>
+      <!-- CONTACT FORM: JavaScript submits the inquiry to the FormSubmit AJAX endpoint. -->
+      <form class="contact-form" id="contact-form">
+        <div class="form-head"><span>PROJECT INQUIRY</span><span>FL / 01</span></div>
         <!-- NAME FIELD: required visitor name. -->
-        <label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Name" required>
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" placeholder="Name" required>
         <!-- EMAIL FIELD: required email address, validated by the browser. -->
-        <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
         <!-- SERVICE PICKER: lets the visitor select the type of help they need. -->
-        <label for="service">What do you need?</label><select id="service" name="service" required><option value="" disabled selected>Choose a service</option><option>Website development</option><option>Online store</option><option>App or digital project</option><option>Website or tech support</option><option>Not sure yet</option></select>
+        <label for="service">What do you need?</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Choose a service</option>
+          <option>Website development</option>
+          <option>Online store</option>
+          <option>App or digital project</option>
+          <option>Website or tech support</option>
+          <option>Not sure yet</option>
+        </select>
         <!-- PROJECT DETAILS: visitor describes their idea or needs. -->
-        <label for="details">Tell us about your project</label><textarea id="details" name="details" rows="3" placeholder="What are you looking to build?" required></textarea>
-        <!-- SUBMIT BUTTON: asks the browser/JavaScript to open an email draft. -->
-        <button class="button button-gold form-submit" type="submit">Create Email Inquiry <span>↗</span></button><p class="form-note">This opens your email app with your inquiry ready to send. No account or sign-up needed.</p><p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <label for="details">Tell us about your project</label>
+        <textarea id="details" name="details" rows="3" placeholder="What are you looking to build?" required></textarea>
+        <!-- SUBMIT BUTTON: JavaScript sends the form inquiry online. -->
+        <button class="button button-gold form-submit" type="submit">Send Inquiry <span>↗</span></button>
+        <p class="form-note">Send your project details directly to Fast Lane Tech Service.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
     </div></section>
   </main>
